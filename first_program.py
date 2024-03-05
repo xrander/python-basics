@@ -1,6 +1,6 @@
 # Get to know you program
 
-print("Hello World!")
+print("Hello there!")
 
 print("What's your name?") #Ask for user name
 
