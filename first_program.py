@@ -1,4 +1,4 @@
-# This program says hello and asks for your name.
+# Get to know you program
 
 print("Hello World!")
 
@@ -16,3 +16,4 @@ age = input()
 
 print("You will be " + str(int(age) + 5) + " in 5 years time.")
 
+print("That's all for now. I wish you the best of life")
