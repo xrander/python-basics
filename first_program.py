@@ -8,7 +8,7 @@ name = input()
 
 print("It's good to meet you, " +  name)
 print("The length of your name is:")
-print(len(name))
+print(len(name.replace(" ", "")))
 
 print("What is your age?") # Ask for user name
 
