@@ -12,6 +12,7 @@ while True:
         print("Enter your move: (r)ock, (p)aper, (s)cissors or (q)uit")
         player_move = input()
         if player_move == "q":
+            print(f"final result is: {wins} Wins, {losses} Losses, {ties} Ties")
             sys.exit() #End the program
         if player_move == "r" or player_move == "p" or player_move == "s":
             break
