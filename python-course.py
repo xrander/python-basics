@@ -201,3 +201,123 @@ first_owned = motorcycles.pop(0)  # removing first item (index 0)
 print(first_owned)
 
 ## Remove item by value --------------------------------
+motorcycles = ["honda", "yamaha", "suzuki", "ducati"]
+print(motorcycles)
+
+motorcycles.remove("ducati") # remove() deletes only one occurence of the item
+print(motorcycles)
+
+motorcycles = ["honda", "yamaha", "suzuki", "ducati"]
+to_be_removed = "yamaha"
+motorcycles.remove(to_be_removed)
+print(f"\n A {to_be_removed.title()} is too expensive for now")
+
+
+### Exercise
+guest_list = ["lincoln", "steve jobs", "adu bamidele"]
+invite = "we would like to have a talk with you"
+print(f"{guest_list[0].title()}, {invite}")
+print(f"\n{guest_list[1].title()}, {invite}")
+print(f"\n{guest_list[2].title()}, {invite}")
+
+print(f"\n{guest_list[0].title()} won't make it")
+absent = "lincoln"
+guest_list[0] = "carnegie"
+print(guest_list)
+print(f"{guest_list[0].title()}, {invite}")
+print(f"\n{guest_list[1].title()}, {invite}")
+print(f"\n{guest_list[2].title()}, {invite}")
+
+new_info = "We've found a bigger table"
+print(f"{guest_list[0].title()}, {new_info}")
+print(f"\n{guest_list[1].title()}, {new_info}")
+print(f"\n{guest_list[2].title()}, {new_info}")
+
+
+guest_list.insert(0, "jesus")
+guest_list.insert(3, "david")
+guest_list.append("obatala")
+
+print(f"{guest_list[0].title()}, {invite}")
+print(f"\n{guest_list[1].title()}, {invite}")
+print(f"\n{guest_list[2].title()}, {invite}")
+print(f"{guest_list[3].title()}, {invite}")
+print(f"\n{guest_list[4].title()}, {invite}")
+print(f"\n{guest_list[5].title()}, {invite}")
+
+print("\n We just discovered that only two guests can be invited")
+
+print("\nNOT INVITED")
+removed_guest = guest_list.pop()
+apology_msg = "We are sorry, we can't invite you to dinner"
+print(f"\n{apology_msg} {removed_guest.title()}, we only have space for two")
+
+removed_guest = guest_list.pop()
+print(f"\n{apology_msg} {removed_guest.title()}, we only have space for two")
+
+removed_guest = guest_list.pop()
+print(f"\n{apology_msg} {removed_guest.title()}, we only have space for two")
+
+removed_guest = guest_list.pop()
+print(f"\n{apology_msg} {removed_guest.title()}, we only have space for two")
+
+print("\nINVITED")
+still_invited = "We'd like to let you know you are still invited"
+print(f"\n{guest_list[0].title()}, {still_invited}")
+print(f"\n{guest_list[1].title()}, {still_invited}")
+
+del guest_list[0]
+del guest_list[0]
+print(guest_list)
+
+## Organizing a List --------------------------------
+### Sorting pemanently with the sort() Method -------
+
+cars = ["bmw", "audi", "toyota", "subaru"]
+cars.sort()
+print(cars)
+
+cars = ["bmw", "audi", "toyota", "subaru"]
+cars.sort(reverse=True) ## Descending order
+print(cars)
+
+### Sorting temporailty with sorted
+cars = ["bmw", "audi", "toyota", "subaru"]
+print("Here is the original list: ")
+print(cars)
+
+print("Here is the sorted list: ")
+print(sorted(cars))
+
+print("Here is the original list again: ")
+print(cars)
+
+### List Reverse Order Printing
+cars = ["bmw", "audi", "toyota", "subaru"]
+print(cars)
+
+cars.reverse()
+print(cars)
+
+### Length of a list
+cars = ["bmw", "audi", "toyota", "subaru"]
+print(len(cars))
+
+### Exercise
+places = ["USA", "South Africa", "Canada", "Doha", "Dubai"]
+print(places)
+print(sorted(places))
+print(places)
+print(sorted(places, reverse = True))
+print(places)
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+places.sort()
+print(places)
+places.sort(reverse = True)
+print(places)
+
+motorcycles = ["honda", "yamaha", "suzuki", "ducati"]
+print(f"The number of mototycles are {len(motorcycles)}")
