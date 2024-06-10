@@ -23,4 +23,4 @@ files = ["guest_book.txt", "dracula.txt", "wrap.txt", "i_no_go_tire.txt", "moby_
 
 for file in files:
     path = Path(file)
-    count_specific_text(path)
+    count_specific_text(path, "man")
